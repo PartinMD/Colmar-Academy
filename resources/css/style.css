@@ -1,6 +1,11 @@
+/* Global */
+
 html {
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
+
+/* Header and Nav Bar */
 
 header {
     display: inline-flex;
@@ -35,11 +40,12 @@ header {
 .logo .text2 {
     font-size: 32px;
     font-weight: 400;
+    color: grey;
 }
 
 .banner {
     display: flex;
-    background-color: grey;
+    background-color: lightgrey;
 }
 
 .navbar {
@@ -111,4 +117,96 @@ header {
 
 button:hover {
     opacity: 0.8;
+}
+
+/* Information Section */
+
+.information {
+    display: flex;
+    width: 100%;
+    padding-bottom: 32px;
+}
+
+.informationLeft {
+    width: 60%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 32px 12px 32px 24px;
+}
+
+.informationLeft img {
+    width: 98%;
+    margin-bottom: 32px;
+}
+
+.informationLeft h1, .informationLeft h4, .informationLeft p {
+    padding-bottom: 24px;
+    padding-right: 10px;
+}
+
+.informationRight {
+    padding: 16px 0 32px 0;
+    width: 40%;
+    border-left: solid lightgrey 1px;
+}
+
+
+.orientation, .campus, .guest {
+    display: flex;
+    padding: 16px;
+}
+
+.orientation img, .campus img, .guest img {
+    width: 35%;
+    height: auto;
+    margin-right: 16px;
+
+}
+
+.orientation .captions {
+    width: 65%;
+    padding: 8px;
+}
+
+.guest {
+    background-color: lightgrey;
+}
+
+.orientation {
+    border-bottom: solid lightgrey 1px;
+}
+
+.campus {
+    border-top: solid lightgrey 1px;
+}
+
+.readmore {
+    color: rgb(16, 16, 192);
+    text-decoration: underline;
+    transition-duration: 0.1s;
+}
+
+.readmore:hover {
+    opacity: 0.8;
+}
+
+/* Learning Section */
+
+.learning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: lightgrey;
+    background-size: cover;
+}
+
+.learningTitle {
+    font-size: 48px;
+    text-align: center;
+    background-color: lightgrey;
+    background-size: cover;
+    padding: 32px;
+    margin: 0;
 }
