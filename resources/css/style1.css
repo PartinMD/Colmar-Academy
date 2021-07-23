@@ -3,6 +3,7 @@
     box-sizing: border-box;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
+    color: rgb(48, 48, 48);
 }
 
 /* Header and Nav */
@@ -13,6 +14,7 @@
     align-items: center;
     width: 100vw;
     height: 64px;
+    border-bottom: solid grey 1px;
 }
 
 .logo-wrapper {
@@ -55,7 +57,7 @@
 
 .nav ul a {
     text-decoration: none;
-    color: black;
+    color: rgb(48, 48, 48);
     transition: font-size .5s;
 }
 
@@ -69,13 +71,65 @@
     height: 6vh;
 }
 
+/* Start Learning Section */
+
+#main-container {
+    display: flex;
+    background-color: lightgrey;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main-container .left-container {
+    padding: 32px 24px;
+    width: 60%;
+}
+
+#main-container .left-container img {
+    width: 100%;
+}
+
+#main-container .right-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#main-container .right-container h1 {
+    font-size: 3rem;
+}
+
+#main-container .right-container p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+#main-container .right-container button {
+    color: white;
+    background-color: rgb(48, 48, 48);
+    height: 8vh;
+    transition: opacity 0.2s;
+}
+
+#main-container .right-container button:hover {
+    opacity: 0.8;
+}
+
+#main-container .right-container h1, p, button {
+    margin-left: 24px;
+    width: 80%;
+}
+
 
 
 
 
 /* Media Queries */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
     .header-wrapper {
         display: flex;
         justify-content: space-evenly;
@@ -109,17 +163,54 @@
     .nav ul .icon:hover {
         width: 20%;
     }
+
+    #main-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #main-container .left-container {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 32px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #main-container .right-container {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    #main-container .right-container h1 {
+        margin-top: 0;
+    }
+
+    #main-container .right-container button {
+        margin-bottom: 32px;
+    }
 }
 
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1020px) {
+    .header-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .logo-wrapper .title, .title-2 {
+        display: none;
+    }
+
     .logo-wrapper img {
         width: auto;
         height: auto;
     }
 
     .nav {
-        width: 100%;
+        width: 80%;
     }
     
     .nav ul li {
@@ -138,3 +229,8 @@
         width: 20%;
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    
+
+} 
