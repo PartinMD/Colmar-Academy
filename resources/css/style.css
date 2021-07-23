@@ -310,3 +310,84 @@ footer {
     font-weight: 400;
     font-size: 1rem;
 }
+
+/* Responsive MQ Section */
+
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+    html {
+        
+    }
+
+    header {
+        height: 64px;
+    }
+    
+    .logo .text, .logo .text2 {
+        display: hidden;
+    }
+
+    .navbar {
+        font-size: 0;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+    
+    .banner img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .banner .caption {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        margin-left: 16px;
+    }
+
+    .banner button {
+        margin: 32px auto;
+        align-self: center;
+    }
+    
+    footer .terms {
+        font-size: 0;
+    }
+
+    footer {
+        justify-content: space-around;
+    }
+}
+
+/* Tablet Portrait */
+
+@media only screen and (max-width: 960px) {
+    header {
+        height: 64px;
+    }
+    
+    .logo .text, .logo .text2 {
+        display: hidden;
+    }
+
+    .navbar {
+        font-size: 0;
+    }
+
+    footer .terms {
+        font-size: 0;
+    }
+
+    footer {
+        justify-content: space-around;
+    }
+}
+
+/* Tablet Landscape */
+
+@media only screen and (max-width: 1024px) {
+
+}
