@@ -273,6 +273,93 @@
     margin-left: 0px;
 }
 
+/* Thesis Section */
+
+.thesis {
+    display: flex;
+    width: 100%;
+    padding-bottom: 32px;
+    border-bottom: solid lightgrey 1px;
+}
+
+h1 {
+    text-align: center;
+    padding: 32px 0;
+    font-size: 1.75rem;
+}
+
+.thesis .vidContainer {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-left: 24px;
+}
+
+.vidContainer video {
+    width: 98%;
+    height: auto;
+}
+
+.vidDesc {
+    width: 95%;
+    text-align: left;
+    padding-bottom: 32px;
+}
+
+.vidDesc h2 {
+    font-size: 1.5rem;
+}
+
+.vidDesc p {
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin: 0;
+    width: 98%;
+}
+
+.thesisRight {
+    width: 40%;
+}
+
+.fisma, .newYork {
+    display: flex;
+    padding: 16px;
+}
+
+.fisma img, .newYork img {
+    width: 35%;
+    height: auto;
+    margin-right: 16px;
+}
+
+.thesis .captions {
+    width: 65%;
+    padding: 8px;
+}
+
+.thesis .captions p {
+    margin: 0;
+}
+
+.fisma {
+    background-color: lightgrey;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright, .terms {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
 /* Media Queries */
 
 @media only screen and (max-width: 430px) {
@@ -369,6 +456,7 @@
     .courses {
         background-color: white;
         padding: 0;
+        border-bottom: solid lightgrey 1px;
     }
 
     .courses .subject {
@@ -399,8 +487,30 @@
         padding: 24px 16px 24px 16px;
     }
 
+    .thesis h1 {
+        padding-bottom: 16px;
+    }
+    
+    .thesisRight {
+        display: none;
+    }
 
+    .thesis .vidContainer {
+        width: 100%;
+        padding: 0;
+    }
 
+    .thesis .vidContainer video {
+        width: 100%;
+    }
+
+    .vidDesc {
+        display: none;
+    }
+
+    .terms {
+        display: none;
+    }
 
 }
 
