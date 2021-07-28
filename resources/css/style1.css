@@ -163,6 +163,9 @@
 #information-container .info-right {
     width: 40%;
     padding: 16px 0 32px 0;
+    border: solid lightgrey 1px;
+    align-items: center;
+    justify-content: center;
 }
 
 #information-container .info-right img {
@@ -175,14 +178,42 @@
     display: none;
 }
 
-#information-container .info-right h2 p .readmore {
+#information-container .info-right .captions {
     width: 65%;
     padding: 8px;
+}
+
+#information-container .info-right h2 {
+    font-size: 1.75rem;
+}
+
+#information-container .info-right p {
+    margin-left: 0px;
 }
 
 .orientation, .campus, .guest {
     display: flex;
     padding: 16px;
+}
+
+.guest {
+    background-color: lightgrey;
+}
+
+.orientation {
+    border-bottom: solid lightgrey 1px;
+}
+
+.campus {
+    border-top: solid lightgrey 1px;
+}
+
+.readmore {
+    color: rgb(16, 16, 192);
+}
+
+.readmore:hover {
+    opacity: 0.8;
 }
 
 
@@ -249,6 +280,34 @@
 
     #main-container .right-container button {
         margin-bottom: 32px;
+    }
+
+    #information-container .info-left {
+        display: none;
+    }
+    #information-container .info-right {
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #information-container .info-right .mobile-img {
+        display: block;
+        width: 100%
+    }
+
+    #information-container .info-right img {
+        display: none;
+    }
+
+    #information-container .info-right .captions {
+        width: 100%;
+        display: block;
+    }
+
+    #information-container .info-right .orientation, .campus, .guest {
+        display: flex;
+        flex-direction: column;
     }
 }
 
